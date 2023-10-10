@@ -1,0 +1,109 @@
+tables:
+  checkbiz_personalinformation:
+    field:
+      id:
+        primary_key: true
+        type: varchar(50)
+        not_null: true
+      SSN:
+        type: varchar(255)
+      ssnStatus:
+        type: varchar(255)
+      responseCode:
+        type: varchar(255)
+      responseMessage:
+        type: varchar(255)
+      basic_firstName:
+        type: varchar(255)
+      basic_givenName:
+        type: varchar(255)
+      basic_surName:
+        type: varchar(255)
+      basic_middleName:
+        type: varchar(255)
+      basic_lastName:
+        type: varchar(255)
+      basic_co:
+        type: varchar(255)
+      basic_street:
+        type: varchar(255)
+      basic_zipCode:
+        type: varchar(255)
+      basic_city:
+        type: varchar(255)
+      basic_extendedAddress:
+        type: varchar(255)
+      basic_foreignAddress1:
+        type: varchar(255)
+      basic_foreignAddress2:
+        type: varchar(255)
+      basic_foreignAddress3:
+        type: varchar(255)
+      basic_foreignCountry:
+        type: varchar(255)
+      basic_apartmentNumber:
+        type: varchar(255)
+      basic_entrance:
+        type: varchar(255)
+      basic_extraAddressField:
+        type: varchar(255)
+      basic_streetName:
+        type: varchar(255)
+      basic_streetNumber:
+        type: varchar(255)
+      extended_municipality:
+        type: varchar(255)
+      extended_municipalityCode:
+        type: varchar(255)
+      extended_parish:
+        type: varchar(255)
+      extended_parishCode:
+        type: varchar(255)
+      extended_district:
+        type: varchar(255)
+      extended_districtCode:
+        type: varchar(255)
+      extended_county:
+        type: varchar(255)
+      extended_countyCode:
+        type: varchar(255)
+      extended_nextBirthDay:
+        type: varchar(255)
+      extended_dateOfBirth:
+        type: varchar(255)
+      extended_age:
+        type: varchar(255)
+      extended_gender:
+        type: varchar(255)
+      extended_isMarried:
+        type: varchar(255)
+      extended_socialStatusWith:
+        type: varchar(255)
+      extended_socialStatusWithSSN:
+        type: varchar(255)
+      extended_numberOfCompanyInvolvements:
+        type: varchar(255)
+      extended_latitude:
+        type: varchar(255)
+      extended_longitude:
+        type: varchar(255)
+      extended_formOfHousing:
+        type: varchar(255)
+      extended_regDate:
+        type: varchar(255)
+      extended_changeDate:
+        type: varchar(255)
+      extended_houseHoldRegDate:
+        type: varchar(255)
+extra:
+  _description: 'Extra field to add to each table if not exist in schema.'
+  field:
+    created_at:
+      type: timestamp
+      default: CURRENT_TIMESTAMP
+    updated_at:
+      type: timestamp
+    created_by:
+      type: varchar(50)
+    updated_by:
+      type: varchar(50)

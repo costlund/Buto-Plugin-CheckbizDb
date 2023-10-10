@@ -1,0 +1,245 @@
+checkbiz_personalinformation_insert:
+  sql: |
+    insert into checkbiz_personalinformation(
+    id
+    ,SSN
+    ,ssnStatus
+    ,responseCode
+    ,responseMessage
+    ,basic_firstName
+    ,basic_givenName
+    ,basic_surName
+    ,basic_middleName
+    ,basic_lastName
+    ,basic_co
+    ,basic_street
+    ,basic_zipCode
+    ,basic_city
+    ,basic_extendedAddress
+    ,basic_foreignAddress1
+    ,basic_foreignAddress2
+    ,basic_foreignAddress3
+    ,basic_foreignCountry
+    ,basic_apartmentNumber
+    ,basic_entrance
+    ,basic_extraAddressField
+    ,basic_streetName
+    ,basic_streetNumber
+    ,extended_municipality
+    ,extended_municipalityCode
+    ,extended_parish
+    ,extended_parishCode
+    ,extended_district
+    ,extended_districtCode
+    ,extended_county
+    ,extended_countyCode
+    ,extended_nextBirthDay
+    ,extended_dateOfBirth
+    ,extended_age
+    ,extended_gender
+    ,extended_isMarried
+    ,extended_socialStatusWith
+    ,extended_socialStatusWithSSN
+    ,extended_numberOfCompanyInvolvements
+    ,extended_latitude
+    ,extended_longitude
+    ,extended_formOfHousing
+    ,extended_regDate
+    ,extended_changeDate
+    ,extended_houseHoldRegDate
+    ,created_by
+    ) values (
+    ?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,?
+    ,'[user_id]'
+    );
+  params:
+    id:
+      type: varchar(50)
+      value: rs:id
+    SSN:
+      type: varchar(255)
+      value: rs:SSN
+    ssnStatus:
+      type: varchar(255)
+      value: rs:ssnStatus
+    responseCode:
+      type: varchar(255)
+      value: rs:responseCode
+    responseMessage:
+      type: varchar(255)
+      value: rs:responseMessage
+    basic_firstName:
+      type: varchar(255)
+      value: rs:basic_firstName
+    basic_givenName:
+      type: varchar(255)
+      value: rs:basic_givenName
+    basic_surName:
+      type: varchar(255)
+      value: rs:basic_surName
+    basic_middleName:
+      type: varchar(255)
+      value: rs:basic_middleName
+    basic_lastName:
+      type: varchar(255)
+      value: rs:basic_lastName
+    basic_co:
+      type: varchar(255)
+      value: rs:basic_co
+    basic_street:
+      type: varchar(255)
+      value: rs:basic_street
+    basic_zipCode:
+      type: varchar(255)
+      value: rs:basic_zipCode
+    basic_city:
+      type: varchar(255)
+      value: rs:basic_city
+    basic_extendedAddress:
+      type: varchar(255)
+      value: rs:basic_extendedAddress
+    basic_foreignAddress1:
+      type: varchar(255)
+      value: rs:basic_foreignAddress1
+    basic_foreignAddress2:
+      type: varchar(255)
+      value: rs:basic_foreignAddress2
+    basic_foreignAddress3:
+      type: varchar(255)
+      value: rs:basic_foreignAddress3
+    basic_foreignCountry:
+      type: varchar(255)
+      value: rs:basic_foreignCountry
+    basic_apartmentNumber:
+      type: varchar(255)
+      value: rs:basic_apartmentNumber
+    basic_entrance:
+      type: varchar(255)
+      value: rs:basic_entrance
+    basic_extraAddressField:
+      type: varchar(255)
+      value: rs:basic_extraAddressField
+    basic_streetName:
+      type: varchar(255)
+      value: rs:basic_streetName
+    basic_streetNumber:
+      type: varchar(255)
+      value: rs:basic_streetNumber
+    extended_municipality:
+      type: varchar(255)
+      value: rs:extended_municipality
+    extended_municipalityCode:
+      type: varchar(255)
+      value: rs:extended_municipalityCode
+    extended_parish:
+      type: varchar(255)
+      value: rs:extended_parish
+    extended_parishCode:
+      type: varchar(255)
+      value: rs:extended_parishCode
+    extended_district:
+      type: varchar(255)
+      value: rs:extended_district
+    extended_districtCode:
+      type: varchar(255)
+      value: rs:extended_districtCode
+    extended_county:
+      type: varchar(255)
+      value: rs:extended_county
+    extended_countyCode:
+      type: varchar(255)
+      value: rs:extended_countyCode
+    extended_nextBirthDay:
+      type: varchar(255)
+      value: rs:extended_nextBirthDay
+    extended_dateOfBirth:
+      type: varchar(255)
+      value: rs:extended_dateOfBirth
+    extended_age:
+      type: varchar(255)
+      value: rs:extended_age
+    extended_gender:
+      type: varchar(255)
+      value: rs:extended_gender
+    extended_isMarried:
+      type: varchar(255)
+      value: rs:extended_isMarried
+    extended_socialStatusWith:
+      type: varchar(255)
+      value: rs:extended_socialStatusWith
+    extended_socialStatusWithSSN:
+      type: varchar(255)
+      value: rs:extended_socialStatusWithSSN
+    extended_numberOfCompanyInvolvements:
+      type: varchar(255)
+      value: rs:extended_numberOfCompanyInvolvements
+    extended_latitude:
+      type: varchar(255)
+      value: rs:extended_latitude
+    extended_longitude:
+      type: varchar(255)
+      value: rs:extended_longitude
+    extended_formOfHousing:
+      type: varchar(255)
+      value: rs:extended_formOfHousing
+    extended_regDate:
+      type: varchar(255)
+      value: rs:extended_regDate
+    extended_changeDate:
+      type: varchar(255)
+      value: rs:extended_changeDate
+    extended_houseHoldRegDate:
+      type: varchar(255)
+      value: rs:extended_houseHoldRegDate
+
+
+
+
+
+
+
