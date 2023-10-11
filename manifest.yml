@@ -1,5 +1,9 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2023-10-11'
+    title: 'Check if exist'
+    description: 'Check if data exist by pid and data is not older than 180 days to avoid request new data.'
   1.0.0:
     date: '2023-10-10'
     title: 'First version'

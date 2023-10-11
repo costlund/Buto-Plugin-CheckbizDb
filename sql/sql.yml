@@ -236,10 +236,56 @@ checkbiz_personalinformation_insert:
     extended_houseHoldRegDate:
       type: varchar(255)
       value: rs:extended_houseHoldRegDate
+db_checkbiz_personalinformation_select_by_SSN:
+  sql: |
+    select
+    id
+    ,SSN
+    ,ssnStatus
+    ,responseCode
+    ,responseMessage
+    ,created_at
+    ,(datediff(now(),created_at)) as created_at_days
+    ,basic_givenName
+    ,basic_surName
+    ,basic_street
+    ,basic_zipCode
+    ,basic_city
+    ,extended_municipality
+    ,extended_municipalityCode
+    ,extended_county
+    ,extended_countyCode
+    ,extended_dateOfBirth
+    ,extended_gender
+    from checkbiz_personalinformation
+    where SSN=? 
+    and ssnStatus='Active'
+    and responseCode='Ok'
+    order by created_at desc
+    limit 1
+  params:
+    -
+      type: varchar(255)
+      value: rs:SSN
+  select:
+    - id
+    - SSN
+    - ssnStatus
+    - responseCode
+    - responseMessage
+    - created_at
+    - created_at_days
+    - basic_givenName
+    - basic_surName
+    - basic_street    
+    - basic_zipCode
+    - basic_city
+    - extended_municipality
+    - extended_municipalityCode
+    - extended_county
+    - extended_countyCode
+    - extended_dateOfBirth
+    - extended_gender
 
 
-
-
-
-
-
+  
